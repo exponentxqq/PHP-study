@@ -1,0 +1,16 @@
+{
+    "name": "xu.qinqin/study",
+    "authors": [
+        {
+            "name": "exponentxqq",
+            "email": "18333617650@163.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "DesignPattern\\": "designPattern/",
+            "Utils\\": "Utils/"
+        }
+    }
+}
