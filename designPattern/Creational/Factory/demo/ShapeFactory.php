@@ -8,21 +8,19 @@
 
 namespace DesignPattern\Creational\Factory\Demo;
 
-use Utils\Str;
+use Enums\ShapeEnum;
 
 class ShapeFactory
 {
-    public function getShape(string $shareType)
+    public function getShape(ShapeEnum $shapeEnum)
     {
-        if (!$shareType) {
-            return null;
+        switch ($shapeEnum->getValue()) {
+            case ShapeEnum::CIRCLE:
+                return new Circle();
+            case ShapeEnum::SQUARE:
+                return new Square();
+            default:
+                return null;
         }
-        $type = new Str($shareType);
-        if ($type->toLower()->equal('circle')) {
-            return new Circle();
-        } elseif ($type->toLower()->equal('square')) {
-            return new Square();
-        }
-        return null;
     }
 }

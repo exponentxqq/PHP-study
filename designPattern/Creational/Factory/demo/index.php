@@ -8,10 +8,12 @@
 
 namespace DesignPattern\Creational\Factory\Demo;
 
+use Enums\ShapeEnum;
+
 include "../../../../vendor/autoload.php";
 
 $factory = new ShapeFactory();
 
-$factory->getShape('circle')->draw();
-$factory->getShape('square')->draw();
+$factory->getShape(new ShapeEnum(ShapeEnum::CIRCLE))->draw();
+$factory->getShape(new ShapeEnum(ShapeEnum::SQUARE))->draw();
 

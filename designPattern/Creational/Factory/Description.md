@@ -1,3 +1,4 @@
+![](http://www.runoob.com/wp-content/uploads/2014/08/factory_pattern_uml_diagram.jpg)
 # 意图
     定义一个创建对象的接口，让其子类自己决定实例化哪一个工厂类，工厂模式使其创建过程延迟到子类进行。
 
