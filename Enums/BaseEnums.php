@@ -43,6 +43,16 @@ abstract class BaseEnums
     }
 
     /**
+     * @param $value
+     * @return BaseEnums
+     * @throws EnumException
+     */
+    public static function makeEnum($value)
+    {
+        return new static($value);
+    }
+
+    /**
      * @return array
      * @throws \ReflectionException
      */

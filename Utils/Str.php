@@ -13,7 +13,7 @@ class Str
     private $source = '';
     private $current = '';
 
-    public static function print(string $string)
+    public static function printLn(string $string)
     {
         print "{$string}\n";
     }

@@ -9,6 +9,7 @@
   "require": {},
   "autoload": {
     "psr-4": {
+      "Demo\\": "demo/",
       "DesignPattern\\": "designPattern/",
       "Utils\\": "Utils/",
       "Enums\\": "Enums/",
